@@ -37,3 +37,17 @@ var groceryTotal = groceryBills[0] + groceryBills[1] + groceryBills[2] + grocery
 var groceryAverage = groceryTotal/5;
 //print output of groceryTotal and groceryAverage
 console.log("You have spent a total of $" + groceryTotal + " on groceries over 5 weeks. That is an average of $" + groceryAverage + " per week.");
+
+//Discounts
+var itemDescription = "Giant Shark Kite"; //description of item
+var originalPrice = 225.40; //original price before tax and/or discounts
+var discountPercent = .35; //discount percentage in decimal form
+var salesTax = .075; //sales tax percentage in decimal form
+//assign the price with no tax to variable
+var priceNoTax = (1 - discountPercent) * originalPrice;
+console.log(priceNoTax);
+//assign the price with tax to variable
+var finalPrice = (1 + salesTax) * priceNoTax;
+console.log(finalPrice);
+//print output of prices with and without taxes of item on discount
+console.log("Your " + itemDescription + " was originally $" + originalPrice + ", but after a discount of " + discountPercent + "%, it is now $" + priceNoTax + " without tax and $" + finalPrice + " with tax.");
