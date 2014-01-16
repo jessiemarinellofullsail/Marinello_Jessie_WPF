@@ -27,3 +27,13 @@ console.log("Each person ate " + totalSlices + " slices of pizza at the party.")
 //subtract the product of numSlices and numPeople from totalSlices.  assign to dogSlices
 var remainder = totalSlices % 1;
 console.log("Sparky got" +" "+ remainder +" "+ "slices of pizza")
+
+//Average Shopping
+//add amounts of grocery bills to variables for 5 weeks
+var groceryBills = [45.60, 89.32, 25.64, 76.00, 57.90];
+//create array of variables. add together for total amount spent on groceries
+var groceryTotal = groceryBills[0] + groceryBills[1] + groceryBills[2] + groceryBills[3] + groceryBills[4];
+//create array of groceryTotal /5
+var groceryAverage = groceryTotal/5;
+//print output of groceryTotal and groceryAverage
+console.log("You have spent a total of $" + groceryTotal + " on groceries over 5 weeks. That is an average of $" + groceryAverage + " per week.");
